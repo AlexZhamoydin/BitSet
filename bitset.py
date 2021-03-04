@@ -1,3 +1,8 @@
+class BitSetException(Exception):
+    def __init__(self, message):
+        super(BitSetException, self).__init__(message)
+
+
 class BitSet:
     def __init__(self):
         self._set = 0
@@ -14,3 +19,9 @@ class BitSet:
 
     def delete(self, char):
         pass
+
+
+a = BitSet()
+print(a)
+
+
